@@ -47,10 +47,6 @@ registration: https://goo.gl/forms/84EdtRsalQ6zayHu1
 </iframe>
 {% endif %}
 
-{% if page.registration %}
-Register here: {{page.registration}}
-{% endif %}
-
 <h2 id="general">General Information</h2>
 
 {% comment %}
@@ -108,6 +104,17 @@ Register here: {{page.registration}}
   <strong>When:</strong>
   {{page.humandate}}.
   {% include workshop_calendar.html %}
+</p>
+{% endif %}
+
+{% comment %}
+  REGISTRATION
+
+  This block displays the link to the registration form
+{% endcomment %}
+{% if page.registration %}
+<p id="reg">
+<strong>Register here:</strong> {{page.registration}}
 </p>
 {% endif %}
 
