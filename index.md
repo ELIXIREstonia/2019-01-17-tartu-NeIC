@@ -114,7 +114,7 @@ registration: https://goo.gl/forms/84EdtRsalQ6zayHu1
 {% endcomment %}
 {% if page.registration %}
 <p id="reg">
-<strong>Register here:</strong> {{page.registration}}
+<strong>Register here:</strong> <a href="{{page.registration}}">{{page.registration}}</a>
 </p>
 {% endif %}
 
