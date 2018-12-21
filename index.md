@@ -13,9 +13,9 @@ enddate: 2019-01-18        # machine-readable end date for the workshop in YYYY-
 instructor: ["Dmytro Fishman", "Liis Kolberg", "Tiago Pereira"] 
 helper: ["Mikhail Papkov", "Ivan Kuzmin", "Priit Adler", "Uku Raudvere"]     # boxed, comma-separated list of helpers' names, like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]
 email: ["laura.altin@ut.ee"]    # boxed, comma-separated list of contact email addresses for the host, lead instructor, or whoever else is handling questions, like ["marlyn.wescoff@example.org", "fran.bilas@example.org", "ruth.lichterman@example.org"]
-registration: https://goo.gl/forms/84EdtRsalQ6zayHu1
 collaborative_notes: https://pad.carpentries.org/2019-01-17-tartu          # optional: URL for the workshop collaborative notes, e.g. an Etherpad or Google Docs document
 eventbrite:           # optional: alphanumeric key for Eventbrite registration, e.g., "1234567890AB" (if Eventbrite is being used)
+registration: https://goo.gl/forms/84EdtRsalQ6zayHu1
 ---
 
 {% comment %} See instructions in the comments below for how to edit specific sections of this workshop template. {% endcomment %}
@@ -45,6 +45,10 @@ eventbrite:           # optional: alphanumeric key for Eventbrite registration, 
   height="280px"
   scrolling="auto">
 </iframe>
+{% endif %}
+
+{% if page.registration %}
+Register here: {{page.registration}}
 {% endif %}
 
 <h2 id="general">General Information</h2>
